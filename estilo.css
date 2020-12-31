@@ -108,3 +108,14 @@ a {
 a:visited, a:link, a:active {
     color: rgb(199,244,100);
 }
+
+footer {
+    text-align: center;
+    background-color: rgb(78,205,196);
+    font-size: 18px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+
+}
