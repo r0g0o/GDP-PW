@@ -25,19 +25,18 @@
     margin-bottom: 0px;
 }
 
-.indice {
+.contenedor {
     display:grid;
     grid-template-columns:  50% 50%;
-    font-size: 45px;    
+    font-size: 45px;
     grid-gap:9px;
     text-align: center;
     margin-top: 20px;
     margin-inline-end: 0px;
     margin-inline-start: 0px;
-
 }
 
-.indicedos {
+.contenedordos {
     display:grid;
     grid-template-columns:  33% 33% 33%;
     font-size: 45px;    
@@ -47,6 +46,18 @@
     margin-inline-end: 0px;
     margin-inline-start: 0px;
 
+}
+
+.contenedorparrafo {
+    display:grid;
+    grid-template-columns:  30% 70%;
+    font-size: 25px;
+    grid-gap:9px;
+    text-align:justify;
+    margin-top: 20px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+    align-items: center;
 }
 
 .linkgdp {
