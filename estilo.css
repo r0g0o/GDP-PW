@@ -34,11 +34,12 @@
     margin-top: 20px;
     margin-inline-end: 0px;
     margin-inline-start: 0px;
+    align-items: center;
 }
 
 .contenedordos {
     display:grid;
-    grid-template-columns:  33% 33% 33%;
+    grid-template-columns: 25% 25% 25% 25%;
     font-size: 45px;    
     grid-gap:1px;
     text-align: center;
@@ -85,10 +86,8 @@ h1::before {
     content: counter(parte) ". ";
 }
 
-h2 {    
-    color: rgb(78,205,196);
-    font-size:30px;
-    font-style: italic;
+h1:hover {
+    background-color: rgb(110, 209, 202);;
 }
 
 body {
@@ -128,5 +127,10 @@ footer {
     bottom: 0;
     left: 0;
     position: absolute;
+}
 
+span {
+    font-style: italic;
+    font-weight: bold;
+    color:rgb(78,205,196);
 }
