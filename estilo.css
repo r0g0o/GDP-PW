@@ -46,7 +46,6 @@
     margin-top: 20px;
     margin-inline-end: 0px;
     margin-inline-start: 0px;
-
 }
 
 .contenedorparrafo {
@@ -86,10 +85,6 @@ h1::before {
     content: counter(parte) ". ";
 }
 
-h1:hover {
-    background-color: rgb(110, 209, 202);;
-}
-
 body {
     background-color:  rgb(85,98,112);
     font-size: 25px;
@@ -126,11 +121,21 @@ footer {
     width: 100%;
     bottom: 0;
     left: 0;
-    position: absolute;
+    position: fixed;
 }
 
 span {
     font-style: italic;
     font-weight: bold;
     color:rgb(78,205,196);
+}
+
+.flecha {
+    position: fixed;
+    bottom: 3%;
+    right: 3%;
+}
+
+.start:hover, .linkgdp:hover, .flecha:hover, h1:hover {
+    opacity: 0.7;
 }
