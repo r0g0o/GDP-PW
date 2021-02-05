@@ -7,6 +7,7 @@
     border-style: solid;
     border-width: 1px;
     border-radius: 50px;
+    grid-area: titulote;
 }
 
 .start{
@@ -26,17 +27,8 @@
     cursor: pointer;
 }
 
-.contenedor {
-    display:grid;
-    grid-template-columns:  50% 50%;
-    font-size: 45px;
-    grid-gap:9px;
-    text-align: center;
-    margin-top: 20px;
-    margin-inline-end: 0px;
-    margin-inline-start: 0px;
-    align-items: center;
-}
+
+
 
 .contenedordos {
     display:grid;
@@ -61,15 +53,7 @@
     align-items: center;
 }
 
-.linkgdp {
-    display: flex;
-    background-color:rgb(255,107,107);
-    border-radius: 50px;
-    padding: 10px;
-    height: 100px;
-    justify-content: center;
-    align-items: center;
-}
+
 
 h1 {
     display: inline-block;
@@ -87,13 +71,7 @@ h1::before {
     content: counter(parte) ". ";
 }
 
-body {
-    background-color:  rgb(85,98,112);
-    font-size: 25px;
-    color: rgb(199,244,100);
-    text-align:justify;
-    counter-reset: parte;
-}
+
 
 .imagen {
     display: block;
@@ -121,9 +99,10 @@ footer {
     background-color: rgb(78,205,196);
     font-size: 18px;
     width: 100%;
-    bottom: 0;
+    /* bottom: 0;
     left: 0;
-    position: fixed;
+    position: fixed; */
+    grid-area: footer;
 }
 
 span {
@@ -140,4 +119,51 @@ span {
 
 .start:hover, .linkgdp:hover, .flecha:hover, h1:hover {
     opacity: 0.7;
+}
+
+.contenedorinicio {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 
+    "titulote titulote"
+    "linkgdp1 linkgdp2"
+    "imagenresumen imagenresumen"
+    "footer footer";
+    gap: 3px;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+.linkgdp1 {
+    grid-area: linkgdp1;
+
+}
+
+.linkgdp2 {
+    grid-area: linkgdp2;
+
+}
+
+.imagenresumen {
+    grid-area: imagenresumen;
+    
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;    
+    border-style: solid;
+    border-width: 1px;  
+    border-radius: 20px;
+    line-height: 1px;
+    max-width: auto;
+    height: 100%;
+}
+
+body {
+    background-color:  rgb(85,98,112);
+    font-size: 25px;
+    color: rgb(199,244,100);
+    text-align:justify;
+    counter-reset: parte;
 }
