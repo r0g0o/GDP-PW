@@ -145,30 +145,36 @@ a:visited, a:link, a:active {
 }
 
 
-@media screen and (max-width: 780px){
-    .contenedorinicio {
-        display:grid;
-        grid-template-columns: 1fr 1fr;
-        /*grid-template-rows: 100px repeat(4, 100px) 80px;*/
-        min-height: 100vh;
-        grid-template-rows: 20% repeat(6, 12%) 8%;
-        grid-template-areas: 
-        "titulote titulote"
-        "igdp1 igdp2"
-        "igdp11 igdp21"
-        "igdp12 igdp22"
-        "igdp13 igdp23"
-        "igdp14 igdp24"
-        "igdp15 igdp25"
-        "igdp16 igdp26"
-        "footer footer";
-        background-color: #72818B;
-        border: 5px solid black;
-        border: black;
-        gap: 2px;
-    }
+@media screen and (max-width: 780px) {
+.contenedorinicio {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    /*grid-template-rows: 100px repeat(4, 100px) 80px;*/
+    min-height: 100vh;
+    grid-template-rows: 22% repeat(7, 10%) 8%;
+    grid-template-areas: 
+    "titulote titulote"
+    "igdp1 igdp2"
+    "igdp11 igdp21"
+    "igdp12 igdp22"
+    "igdp13 igdp23"
+    "igdp14 igdp24"
+    "igdp15 igdp25"
+    "igdp16 igdp26"
+    "footer footer";
+    background-color: #72818B;
+    border: 5px solid black;
+    border: black;
+    gap: 2px;
 }
 
 body {
     font-size: 12px;
+}
+
+.igdp {
+    background-color: #454857;
+    font-size: 1.5em;
+}
+
 }
