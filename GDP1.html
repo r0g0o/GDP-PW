@@ -4,33 +4,32 @@
   <meta charset="utf-8">
   <title>GDP1</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./estilo.css">
+  <link rel="stylesheet" href="./estilo1.css">
   <link rel="icon" type="image/png" href="/media/logo chiphd3.png">
 </head>
+
+<body onload="moverse()">
+
+<div class="menu">
+<a href="./index.html" class="menue">Inicio</a>
+<p class="menue" onclick="mostrartodouno()">Mostrar todo</p>
+<p class="menue" onclick="ocultartodouno()">Ocultar todo</p>
+<a href="./GDP2.html" class="menue">GDP2</a>
+</div>
 
 <div class="titulote">
     Administración de Recursos Humanos (GDP1)
 </div>
 
-<div class="contenedordos">
-<a href="./index.html" class="start">Inicio</a>
-<p class="start" onclick="mostrartodouno()">Mostrar todo</p>
-<p class="start" onclick="ocultartodouno()">Ocultar todo</p>
-<a href="./GDP2.html" class="start">GDP2</a>
-</div>
-
-<img class="imagen" src="./media/gdp1/GDP1.png"  alt="Gráfico resumen"  title="Resumen">
-
-<body>
-<h1 id="analisispuesto" onclick="mostrarocultar('unouno')">Análisis del puesto</h1>
-<div id="unouno" style="display: none;">
-<div class="contenedorparrafo" style="font-size: 25px; grid-template-columns: 40% 60%;">
-<img class="imagen" src="media/gdp1/disenopuesto.JPG" title="Proceso de análisis de puesto" style="height: auto;width: 600px;">
+<details open id="11">
+<summary>Análisis del puesto</summary>
+<div>
+<img class="imagen" src="media/gdp1/disenopuesto.JPG" title="Proceso de análisis de puesto">
 <p>
     Antes de todos los procesos, hay que definir adecuadamente el puesto, ya que esto implica directamente en el resto de los siguientes procesos. De hecho, <span>un 
     proceso de análisis del trabajo se relaciona con un mejor desempeño de trabajadores y organización</span>. Una herramienta para analizar correctamente el puesto es con 
     el <b><u>Scorecard</u></b>. Esta muestra:
-</div>
+
     <ol>
     <li><b><u>Misión del trabajo</u></b>: Describe la esencia del trabajo y por qué el rol existe. Es decir, qué exactamente va a hacer el candidato tomando el rol.</li>
     <li><b><u>Resultados</u></b>: Desarrollar 3-5 objetivos que una persona debe completar. Más concretamente, qué necesidades deben ser completadas en los 
@@ -38,6 +37,7 @@
     <li><b><u>Competencias</u></b>: Identificar las competencias apropiadas para poder lograr los resultados. Ejemeplo, Cuáles competencias son críticas y relacionadas 
     con el trabajo para el rol, o Qué valores son esenciales para una relación a largo plazo, independiente del rol.</li>
 </ol>
+</p>
 <p>Luego, existe también la <b><u>descripción del puesto</u></b>, la cual define:</p>
 <ol>
     <li><b><u>Breve Background y descripción de la compañía</u></b></li>
@@ -60,17 +60,44 @@
     del puesto y así, de la organización.
 </p>
 
-</p>
-<hr>
-</div>
 
-<h1 id="Reclutamiento" onclick="mostrarocultar('unodos')">Reclutamiento</h1>
-<div id="unodos" style="display: none;">
-<img class="imagen" src="media/gdp1/Reclutamiento.png" title="Enfoque para reclutar" style="width: 800px; height:auto;">
-<div class="contenedor">
-<img class="imagen" src="media/gdp1/Reclutamiento1.JPG" title="Rol de RH en la administración de carrera" style="width: 510px; height:auto;">
-<img class="imagen" src="media/gdp1/Reclutamiento2.JPG" title="Armonizar necesidades de la persona y organización" style="width: 850px; height:auto;">
 </div>
+</details>
+
+<details open id="12">
+<summary>Reclutamiento</summary>
+<div>
+<img class="imagen" src="media/gdp1/Reclutamiento.png" title="Enfoque para reclutar">
+
+<table>
+    <tr class="t1">
+        <th>Reclutamiento Interno</th>
+        <th>Reclutamiento Externo</th>
+    </tr>
+    <tr class="t2">
+        <th><ul>
+            <li>Publicaciones internas de trabajo</li>
+            <li>Evaluaciones de desempeño</li>
+            <li>Inventarios de habilidades</li>
+            <li>Mapas de reemplazo</li>
+            <li>Centro de evaluación</li>
+        </th>
+        <th><ul>
+            <li>Tareas</li>
+            <li>Anuncios</li>
+            <li>Internet</li>
+            <li>Redes sociales</li>
+            <li>Móviles</li>
+            <li>Contratación de agencias de empleo</li>
+            <li>Instituciones educativas</li>
+            <li>Asociaciones profesionales</li>
+            <li>Re-reclutamiento</li>
+        </th></ul>
+</table>
+
+<img class="imagen" src="media/gdp1/Reclutamiento1.JPG" title="Rol de RH en la administración de carrera">
+<img class="imagen" src="media/gdp1/Reclutamiento2.JPG" title="Armonizar necesidades de la persona y organización">
+
 <p>
     <span>Es 77% de las empresas con programas de mentoring exitosos reportaron que aumentaron de manera efectiva la retención de empleados</span>. Por otra parte, 
     <span>la presentación realista de trabajo aumenta la retención un 10%</span> aparte de que los candidatos mostrarían su capacidad para la fase de Selección. Por 
@@ -79,10 +106,60 @@
 </p>
 </ol>
 </div>
+</details>
 
-<h1 id="Seleccion" onclick="mostrarocultar('unotres')">Selección</h1>
-<div id="unotres" style="display: none;">
-<img class="imagen" src="media/gdp1/Seleccion.png" title="Resumen Selección" style="width: 1300px; height:auto;">
+<details open id="13">
+<summary>Selección</summary>
+<div>
+<img class="imagen" src="media/gdp1/Seleccion.png" title="Resumen Selección">
+
+<table>
+<tr class="t1">
+    <th>Evaluación Inicial</th>
+    <th>La entrevista de Empleo</th>
+    <th>Post Entrevista</th>
+    <th>Pruebas antes del Empleo</th>
+    <th>Decisión de Selección</th>
+</tr>
+<tr class="t2">
+    <th><ul>
+        <li>Naturaleza</li>
+        <li>Cartas de presentación y currículos</li>
+        <li>>Verificación por internet</li>
+        <li>Evaluación por teléfono</li>
+        <li>Solicitudes de empleo</li>
+        <li>Solicitudes en línea</li>
+    </th>
+    <th><ul>
+        <li>Tareas</li>
+        <li>No dirigida</li>
+        <li>Estructurada</li>
+        <li>Situacional</li>
+        <li>Descripción de comportamiento</li>
+        <li>Panel y secuenciales</li>
+        <li>Telefónicas</li>
+        <li>Por computadora</li>
+        <li>Video entrevista</li>
+    </th></ul>
+
+    <th><ul>
+        <li>Verificación de las referencias</li>
+        <li>Revisión de antecedentes</li>
+        <li>Revisión de créditos</li>
+    </ul></th>
+
+    <th><ul>
+        <li>Tipos de pruebas técnicas y psicológicas</li>
+        <li>Validez de pruebas</li>
+    </ul></th>
+
+    <th><ul>
+        <li>Compilación de información</li>
+        <li>Estrategia de decisión</li>
+        <li>Decisión final</li>
+    </ul></th>
+</table>
+
     <p>
     El <span>costo de contratar mal a alguien en una posición intermedia es de aproximadamente 20.000 USD y 100.000 USD si es alto directivo</span>. Es por esto que el objetivo 
     de la selección es maximizar los aciertos de la búsqueda del empleado con características concretas.
@@ -98,8 +175,8 @@
     herramientas virtuales de prueba.</span>
 </p>
 <div class="contenedor">
-<img class="imagen" src="media/gdp1/seleccion1.JPG" title="Pasos en el proceso de selección" style="width: 500px; height:auto;">
-<img class="imagen" src="media/gdp1/seleccion2.JPG" title="Variables en la entrevista de empleo" style="width: 600px; height:auto;">
+<img class="imagen" src="media/gdp1/seleccion1.JPG" title="Pasos en el proceso de selección">
+<img class="imagen" src="media/gdp1/seleccion2.JPG" title="Variables en la entrevista de empleo">
 </div>
 <p>
     Durante la entrevista, es importante capacitar al entrevistador. Se requiere que comprenda el puesto, establezca un plan de entrevistas, establecer y mantener un 
@@ -119,13 +196,46 @@
     otro. También se le puede agregar que haya fases de selección si las pruebas son muy costosas, para que se vayan filtrando lo más posible los candidatos y no 
     gastar de más. Lo malo del enfoque estadístico es que hay que siempre actualizar los criterios a ponderar.
 </p>
-<hr>
 
 </div>
+</details>
 
-<h1 id="capacitacion" onclick="mostrarocultar('unocuatro')">Capacitación y Desarrollo</h1>
-<div id="unocuatro" style="display: none;">
-<img class="imagen" src="media/gdp1/Capacitación.png" title="Fases de capacitación sistémica" style="width: 1200px; height:auto;">
+<details open id="14">
+<summary>Capacitación y Desarrollo</summary>
+<div>
+<img class="imagen" src="media/gdp1/Capacitación.png" title="Fases de capacitación sistémica">
+
+<table>
+    <tr class="t1">
+        <th>Evaluar Necesidades</th>
+        <th>Diseño</th>
+        <th>Implementación</th>
+        <th>Evaluación</th>
+    </tr>
+    <tr class="t2">
+        <th><ul>
+            <li>De la Organización</li>
+            <li>Tareas</li>
+            <li>Personas</li>
+        </th>
+        <th><ul>
+            <li>Objetivos Instruccionales</li>
+            <li>Capacitación</li>
+            <li>Principios de Aprendizaje</li>
+        </th></ul>
+        <th><ul>
+            <li>Métodos en el Puesto</li>
+            <li>Fuera del Puesto</li>
+            <li>Desarrollo Gerencial</li>
+        </ul></th>
+        <th><ul>
+            <li>Reacciones</li>
+            <li>Aprendizaje</li>
+            <li>Comportamiento</li>
+            <li>Resultados</li>
+        </ul></th>
+</table>
+
 <p>
     El objetivo del entrenamiento es contribuir a los objetivos generales estratégicos de una organización. La primera fase del enfoque de sistemas es la 
     evaluación de necesidades. Aquí se analiza la organización para decidir dónde es necesaria, su relación con metas estratégicas y cómo se usarían mejor los 
@@ -138,8 +248,7 @@
     adaptabilidad, sinceridad, sentido del humor, interés, instrucciones claras, ayuda individual y entusiasmo. El cuarto punto son los principios de aprendizaje 
     que están abajo. 
 </p>
-<div class="contenedorparrafo">
-<img class="imagen" src="media/gdp1/Capacitación1.jpg" title="Principios del aprendizaje" style="width: 400px; height:auto;">
+<img class="imagen" src="media/gdp1/Capacitación1.jpg" title="Principios del aprendizaje">
     <ul>
         <li><b><u>Establecimiento de metas</u></b>: crea un mayor interés, comprensión y empeño el explicar por qué se hace la capacitación.</li>
         <li><b><u>Importancia de la presentación</u></b>: Un medio cómodo, familiar y relacionado con el anterior.</li>
@@ -151,7 +260,6 @@
         <li><b><u>Retroalimentación y refuerzo</u></b>: como el aprendizaje no es lineal, se debe considerar el poder retroceder o anticipar una estancación del aprendizaje. 
         También, hay que considerar que conductualmente si se premia una buena actitud, esa actitud se va a ver más seguido, sobre todo si se premia inmediatamente.</li>
         </ul>
-</div>
 <p>
     Sobre la implementación. Métodos de capacitación para no gerentes son la capacitación en el puesto, capacitación de aprendizaje práctico; cooperativa, prácticas profesionales y 
     capacitación gubernamental, instrucción en el aula, programada, audiovisual, simulación, E-learning. Para gerentes, están las experiencias en el puesto, 
@@ -170,21 +278,57 @@
 <p>
     Otros tipos de capacitación son la inducción, integración (onboarding), capacitación de habilidades básicas, capacitación cruzada, de equipos, ética y diversidad.
 </p>
-<hr>
 </div>
+</details>
 
-<h1 id="performance" onclick="mostrarocultar('unocinco')">Evaluación y Gestión de Desempeño</h1>
-<div id="unocinco" style="display: none;">
+<details open id="15">
+<summary>Evaluación y Gestión de Desempeño</summary>
+<div>
 
-<img class="imagen" src="media/gdp1/Desempeño.png" title="Fases de Evaluación de desempeño" style="width: 1200px; height:auto;">
+<img class="imagen" src="media/gdp1/Desempeño.png" title="Fases de Evaluación de desempeño">
+
+<table>
+    <tr class="t1">
+        <th>Programa de Evaluación del Desempeño</th>
+        <th>Desarrollo de un Programa Efectivo</th>
+        <th>Métodos de evaluación</th>
+        <th>Entrevistas de evaluación</th>
+    </tr>
+    <tr class="t2">
+        <th><ul>
+            <li>Propósito de la evaluación</li>
+            <li>Razones del fracaso</li>
+        </th>
+        <th><ul>
+            <li>Tareas</li>
+            <li>Estándares de desempeño</li>
+            <li>Cumplimiento de la ley</li>
+            <li>Evaluador</li>
+            <li>Evaluación 360</li>
+            <li>Capacitación de los evaluadores</li>
+        </th></ul>
+        <th><ul>
+            <li>De Rasgos</li>
+            <li>Conductuales</li>
+            <li>De Resultados</li>
+        </ul></th>
+
+        <th><ul>
+            <li>Tipos de Entrevistas</li>
+            <li>Realización</li>
+            <li>Mejorar el Desempeño</li>
+        </ul></th>
+
+</table>
+
 <p>
     La evaluación de desempeño se realiza en relación con los requerimientos del puesto para entregar retroalimentación mutua entre la empresa y empleado. <span>Si el 
     desempeño se administra bien, se tiene entre 40-50% más probabilidades de superar a sus competidores en las áreas de ingresos, productividad y rentabilidad y 
     valor de mercado</span>. También, <span>a menor retroalimentación, menor participación del empleado, incluso sería mejor retroalimentación negativa.</span>
 </p>
 <div class="contenedor">
-<img class="imagen" src="./media/gdp1/desempeño1.JPG" title="Propósitos de la evaluación" style="width: 740px; height:auto;">
-<img class="imagen" src="./media/gdp1/desempeño2.JPG" title="Razones del fracaso" style="width: 675px; height:auto;">
+<img class="imagen" src="./media/gdp1/desempeño1.JPG" title="Propósitos de la evaluación">
+<img class="imagen" src="./media/gdp1/desempeño2.JPG" title="Razones del fracaso">
 </div>
 <p>
     Sobre los estándares de desempeño, está la relevancia estratégica, es decir, que lo que se mide está acorde con los objetivos estratégicos. Deficiencia de 
@@ -192,8 +336,8 @@
     respecto a la estabilidad o consistencia que las personas tienen cierto desempeño en el tiempo, el cual puede ser recalibrado entre gerentes.
 </p>
 <div class="contenedor">
-<img class="imagen" src="./media/gdp1/desempeño3.JPG" title="Fuentes alternas de evaluación" style="width: 460px; height:auto;">
-<img class="imagen" src="./media/gdp1/desempeño4.JPG" title="Ventajas y desventajas evaluación 360" style="width: 700px; height:auto;">
+<img class="imagen" src="./media/gdp1/desempeño3.JPG" title="Fuentes alternas de evaluación">
+<img class="imagen" src="./media/gdp1/desempeño4.JPG" title="Ventajas y desventajas evaluación 360">
 </div>
 <p>
     Al incluir a los asociados, se crean evaluaciones más objetivas, empleados más efectivos, clientes más satisfechos y mejor desempeño. En cualquier caso, hay 
@@ -207,7 +351,7 @@
     similitud con el evaluador.
 </p>
 <div class="contenedorparrafo" style="grid-template-columns:  50% 50%;">
-<img class="imagen" src="./media/gdp1/desempeño5.JPG" title="Resúmen de métodos de evaluación" style="width: 770px; height:auto;">
+<img class="imagen" src="./media/gdp1/desempeño5.JPG" title="Resúmen de métodos de evaluación">
 <p>
     Lo más importante del método de evaluación es que sea lo suficientemente simple para que se pueda realizar sistemáticamente, recién ahí hay que mejorar los criterios.
     Un sistema nunca ha fracasado por ser demasiado sencillo. Aparte de lo anterior, <span>una fijación de objetivos mejora el desempeño entre un 10 y 25%.</span>
@@ -225,15 +369,16 @@
     en buen momento y que el objetivo sea mejorar. Se debe cambiar el comportamiento, no la persona. Aterrizar los planes de crecimiento a puntos y periodo concreto. 
     Por último, el desempeño no siempre es culpa de la capacidad del empleado, puede ser por su motivación o el ambiente de trabajo o externo.
 </p>
-<hr>
 </div>
+</details>
 
-<h1 id="compensación" onclick="mostrarocultar('unoseis')">Gestión de Compensación</h1>
-<div id="unoseis" style="display: none;">
+<details open id="16">
+<summary>Gestión de Compensación</summary>
+<div>
 <p>
 <div class="contenedor">
-<img class="imagen" src="./media/gdp1/Compensasión1.JPG" title="Compensasión" style="width: 610px; height:auto;">
-<img class="imagen" src="./media/gdp1/Compensasión2.JPG" title="Compensasión" style="width: 670px; height:auto;">
+<img class="imagen" src="./media/gdp1/Compensasión1.JPG" title="Compensasión">
+<img class="imagen" src="./media/gdp1/Compensasión2.JPG" title="Compensasión">
 </div>
 <p>
     La gestión de compensación cumple 5 objetivos. Recompensar a los empleados según el valor que genera a la empresa, Lograr las metas de negocio motivando, 
@@ -250,10 +395,20 @@
     equitativo, justo, consistente y transparente, ascensos legítimos, flexible, desarrollo continuo, clarificar la metodología, y poder ser monitoreable.
 </p>
 </div>
+</details>
+
 <a href="#"><img class="flecha" src="media/flecha.png"></a>
 
+
 </body>
+
+
 
 <script src="Script.js"></script>
 
 </html>
+
+<th><ul>
+    <li></li>
+
+</ul></th>

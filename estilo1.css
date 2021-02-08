@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color:  #72818B;
+    font-size: 16px;
+    color: #BEE2E7;
+    text-align:justify;
+    counter-reset: parte;
+}
+
+.titulote {
+    background-color: #8F002E;
+    font-size: 3em;
+    text-align: center;
+}
+
+.menu {
+    display: grid;
+    max-width: 100%;
+    grid-template-columns: repeat(4, auto);
+    column-gap: 3px;
+    position: sticky;
+    top:0;
+    width: 100%;
+    background-color: #72818B;
+    
+}
+
+
+
+
+ul {
+    list-style-position: inside;
+    padding-left: 5px;
+}
+
+.menu > * {
+    font-size: 1.6em;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background-color: #4F57AA;
+}
+
+.menue {
+    width: 100%;
+}
+
+summary {
+    background-color: #454857;
+    font-size: 2em;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 6px;
+    vertical-align: top;
+    height: 70%;
+    text-align: justify;
+}
+
+.t1 {
+    font-size:1.7rem;
+    background-color: #454857
+}
+
+.t2 {
+    background-color: #4F57AA;
+}
+
+.imagen {
+    margin-top: 6px;
+    margin-bottom: 7px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+    max-height: 650px;
+    display: block;
+    height: auto;
+    max-width: auto;
+}
+
+p, li {
+    font-size: 1.3rem;
+    height: auto;
+}
+
+li {
+    margin-bottom: 4px;
+}
+
+span {
+    color: #4F57AA;
+    font-weight: bolder;
+}
+
+a:visited, a:link, a:active, .linkfooter {
+    color: #BEE2E7;
+}
+
+details summary::-webkit-details-marker {
+    display:none;
+  }
+
+summary::before {
+    counter-increment: parte;
+    content: counter(parte) ". ";
+}
+
+summary::after {
+    content: "+";
+    position: absolute;
+    right: 5px;
+    transform-origin: center;
+    transition: 200ms linear;    
+}
+
+details[open] summary:after {
+    transform: rotate(45deg);
+}
+
+.menu > *:hover, summary:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+.flecha {
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+}
+
+@media screen and (max-width: 780px){
+    .imagen {
+        width: 100%;
+    }
+
+    menu {
+        width: 100%;
+    }
+}
