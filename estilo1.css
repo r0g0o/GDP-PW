@@ -69,11 +69,13 @@ table {
 
 .t1 {
     font-size:1.7rem;
-    background-color: #454857
+    background-color: #454857;
+    text-align: center;
 }
 
 .t2 {
     background-color: #4F57AA;
+    vertical-align: top;
 }
 
 .imagen {
@@ -82,10 +84,9 @@ table {
     margin-left: auto;
     margin-right: auto;
     width: 65%;
-    max-height: 650px;
     display: block;
-    height: auto;
-    max-width: auto;
+    max-width: 850px;
+    
 }
 
 p, li {
@@ -95,9 +96,10 @@ p, li {
 
 li {
     margin-bottom: 4px;
+    list-style-type: none;
 }
 
-span {
+em {
     color: #4F57AA;
     font-weight: bolder;
 }
