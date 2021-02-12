@@ -153,4 +153,15 @@ a {
     menu {
         width: 100%;
     }
+
+    body {
+        font-size: 13px;
+    }
+
+    .t1 {
+        font-size:1.4rem;
+    }
+
+    p, li {
+        font-size: 1rem;
 }
